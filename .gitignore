@@ -21,3 +21,9 @@ var/
 gitversion
 .DS_Store
 .vscode/
+.idea/
+rrd/config.py
+/rrd/config.py
+/rrd/static/favicon.ico
+/rrd/static/img/title_logo.png
+
