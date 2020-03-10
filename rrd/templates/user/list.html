@@ -21,7 +21,7 @@
 	<div class="row">
 		<div class="col-md-12">
 
-			<div style="margin: 0 auto; max-width: 400px;">
+			<div style="margin: 0 auto; max-width: 800px;">
 
 				<ol class="breadcrumb">
 					<li class="active">通讯录</li>
@@ -30,17 +30,17 @@
 				<div class="form-inline mb20" role="form">
 					<div class="form-group">
 						<input type="text" value="{{query_term}}" class="form-control" id="query"
-						placeholder="name or email">
+						placeholder="查找名称或者 E-mail">
 					</div>
 					<button type="button" onclick="query_user();" class="btn btn-default">
 						<span class="glyphicon glyphicon-search"></span>
-						Search
+						查找
 					</button>
 
                     {%if g.user.is_admin() or g.user.is_root()%}
                     <a href="/user/create" class="btn btn-default pull-right">
                             <span class="glyphicon glyphicon-plus"></span>
-                            Add
+                            添加
                     </a>
                     {%endif%}
 

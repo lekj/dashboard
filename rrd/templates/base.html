@@ -8,7 +8,7 @@
     {% endblock %}
 
     <title>
-        {%block title%}Falcon+{%endblock%}
+        {%block title%} {{ g.def_title }} {%endblock%}
     </title>
 
     {% block css %}
@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-tokenfield/css/bootstrap-tokenfield.min.css')}}">
         <link href="/static/css/base.css?v=0.1.0" rel="stylesheet">
         <link href="{{url_for('static', filename='css/g.css')}}" rel="stylesheet">
+	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+        <link rel="icon" sizes="any" mask href="">
         <style>
             body {
                 font-size:12px;

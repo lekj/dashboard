@@ -80,7 +80,7 @@ msgstr "搜索"
 
 #: rrd/templates/index.html:182
 msgid "delete counters"
-msgstr "删除counters"
+msgstr "删除Counters"
 
 #: rrd/templates/chart/multi_ng.html:96 rrd/templates/chart/multi_pic.html:44
 #: rrd/templates/index.html:186
@@ -218,7 +218,7 @@ msgstr "配置说明"
 
 #: rrd/view/dashboard/screen.py:58
 msgid "screen create fail"
-msgstr "创建screen失败"
+msgstr "创建Screen失败"
 
 #: rrd/view/dashboard/screen.py:224
 msgid "edit successful"
@@ -231,4 +231,65 @@ msgstr "编辑"
 #: rrd/view/portal/cluster.py:95
 msgid "clone"
 msgstr "克隆"
+
+#: rrd/templates/navbar.html:28
+msgid "Welcome"
+msgstr "欢迎"
+
+#: rrd/templates/navbar.html:28
+msgid "Sign in"
+msgstr "登录"
+
+msgid "Profile"
+msgstr "用户信息"
+
+msgid "Users"
+msgstr "用户档案"
+
+msgid "Teams"
+msgstr "团队信息"
+
+msgid "Logout"
+msgstr "退出"
+
+msgid "Login"
+msgstr "登录"
+
+msgid "Register"
+msgstr "注册"
+
+msgid "Dashboard"
+msgstr "仪表板"
+
+msgid "Screen"
+msgstr "信息屏"
+
+msgid "+Screen"
+msgstr "添加信息屏"
+
+msgid "HostGroups"
+msgstr "主机组"
+
+msgid "Templates"
+msgstr "模版"
+
+msgid "Expressions"
+msgstr "表达式"
+
+msgid "Nodata"
+msgstr "无数据"
+
+msgid "Alarm-Dashboard"
+msgstr "警报板"
+
+
+
+
+
+
+
+
+
+
+
 

@@ -20,6 +20,7 @@ from flask import g, session, request, redirect
 
 from rrd import app, config
 from rrd.view.utils import get_usertoken_from_session, get_current_user_profile
+#from rrd.consts import DEF_TITLE, DEF_URL
 
 @app.template_filter('fmt_time')
 def fmt_time_filter(value, pattern="%Y-%m-%d %H:%M"):
@@ -54,9 +55,13 @@ def app_teardown(exception):
 
 @app.before_request
 def app_before():
+
     g.user_token = get_usertoken_from_session(session)
     g.user = get_current_user_profile(g.user_token)
     g.locale = request.accept_languages.best_match(config.LANGUAGES.keys())
+
+    g.def_title = config.DEF_TITLE.decode('utf-8')
+    g.def_url = config.DEF_URL
 
     path = request.path
     if not g.user and not path.startswith("/auth/login") and \
@@ -77,5 +82,7 @@ def app_before():
         g.nav_menu = "p_nodata"
     elif path.startswith("/portal/alarm-dash"):
         g.nav_menu = "p_alarm-dash"
+    elif path.startswith("/user") or path.startswith("/team") or path.startswith("/auth"):
+        g.nav_menu = "p_system"
     else:
-        g.nav_menu = ""
+        g.nav_menu = "nav_dashboard"
