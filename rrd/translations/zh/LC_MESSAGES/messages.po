@@ -188,7 +188,7 @@ msgstr "视角"
 
 #: rrd/templates/portal/alarm/case.html:6
 msgid "alerting cases"
-msgstr "告警case列表"
+msgstr "告警列表"
 
 #: rrd/templates/portal/alarm/case.html:7
 msgid "not recovered cases"
@@ -218,7 +218,7 @@ msgstr "配置说明"
 
 #: rrd/view/dashboard/screen.py:58
 msgid "screen create fail"
-msgstr "创建Screen失败"
+msgstr "创建信息屏失败"
 
 #: rrd/view/dashboard/screen.py:224
 msgid "edit successful"
@@ -271,7 +271,7 @@ msgid "HostGroups"
 msgstr "主机组"
 
 msgid "Templates"
-msgstr "模版"
+msgstr "监控模版"
 
 msgid "Expressions"
 msgstr "表达式"

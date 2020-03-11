@@ -9,7 +9,7 @@ function fn_toogle_legend_flot(a, i) {
     } else {
         $l.hide();
     }
-    $(a).text('切换legend');
+    $(a).text('切换图示');
     return false;
 }
 
@@ -63,7 +63,7 @@ $(function(){
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a href="javascript:void(0);" class="btn btn-link btn-xs" onclick="return fn_toogle_legend_flot(this, '{{i}}');">切换legend</a>
+                                                <a href="javascript:void(0);" class="btn btn-link btn-xs" onclick="return fn_toogle_legend_flot(this, '{{i}}');">切换图示</a>
                                             </li>
                                             <li>
                                                 <a href="javascript:void(0);" class="btn btn-link btn-xs" onclick="return fn_toogle_sum_flot(this, '{{i}}');">切换求和</a>
@@ -132,7 +132,7 @@ $(function(){
         <li class="screen" role="presentation">
             <span role="menuitem" style="margin-left:15px;line-height:25px;"> 
             <a href="/screen/{{c.id}}"><small>{{c.name}}</small></a>
-            <a href='/screen/{{c.id}}/delete' class="glyphicon glyphicon-remove pull-right" style="margin-right:10px;" onclick="return confirm('确定要删除这个screen?');"></a>
+            <a href='/screen/{{c.id}}/delete' class="glyphicon glyphicon-remove pull-right" style="margin-right:10px;" onclick="return confirm('确定要删除这个信息屏?');"></a>
             </span>
             <hr style="margin:5px;"/>
         </li>
@@ -155,7 +155,7 @@ $(function(){
 
       <ul class="dropdown-menu" role="menu">
         {%if current_top_screen %}
-        <li><a href="/screen/add?pid={{current_top_screen.id}}"> + screen</a></li>
+        <li><a href="/screen/add?pid={{current_top_screen.id}}"> + 新增信息屏</a></li>
         {%endif%}
 
         {%for c in sub_screens%}
